@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import {
   Form,
   FormControl,
-  FormDescription,
+//   FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -14,7 +14,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { useRouter } from "next/navigation";
+// import { useRouter } from "next/navigation";
 import React from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
@@ -33,7 +33,7 @@ export const formSchema = z.object({
 });
 
 const CreateBBSPage = () => {
-  const router = useRouter();
+//   const router = useRouter();
 
   const form = useForm({
     resolver: zodResolver(formSchema),
